@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/string/src/Minimum_steps_to_delete_a_string_after_repeated_deletion_of_palindrome_substrings/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Minimum_steps_to_delete_a_string_after_repeated_deletion_of_palindrome_substrings.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="string"/>
+</launchConfiguration>

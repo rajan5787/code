@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/queue/src/An_Interesting_Method_to_Generate_Binary_Numbers_from_1_to_n/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="An_Interesting_Method_to_Generate_Binary_Numbers_from_1_to_n.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="queue"/>
+</launchConfiguration>

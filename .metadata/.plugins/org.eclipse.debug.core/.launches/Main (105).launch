@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Binary tree/src/Print_all_nodes_that_are_at_distance_k_from_a_leaf_node/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Print_all_nodes_that_are_at_distance_k_from_a_leaf_node.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Binary tree"/>
+</launchConfiguration>

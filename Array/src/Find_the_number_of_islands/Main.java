@@ -1,0 +1,51 @@
+package Find_the_number_of_islands;
+
+public class Main {
+
+	public static void main(String argv[]){
+		
+		int[][] a = {{1, 1, 0, 0, 0},
+                {0, 1, 0, 0, 1},
+                {1, 0, 0, 1, 1},
+                {0, 0, 0, 0, 0},
+                {1, 0, 1, 0, 1} };
+		
+		boolean[][] visited = new boolean[a.length][a[0].length];
+		int count = 0;
+		
+		for(int i = 0;i<a.length;i++){
+			for(int j = 0;j<a[0].length;j++){
+				
+				if(a[i][j]==1&&!visited[i][j]){
+					
+					dfs(a,i,j,visited);
+					count++;
+				}
+			}
+		}
+		
+		System.out.println(count);
+	}
+	
+	public static void dfs(int[][] a,int i,int j,boolean[][] visited){
+		
+		visited[i][j] =true;
+		int rowNbr[] = new int[] {-1, -1, -1,  0, 0,  1, 1, 1};
+        int colNbr[] = new int[] {-1,  0,  1, -1, 1, -1, 0, 1};
+ 
+        for(int k = 0;k<8;k++){
+        	if(isSafe(a, i + rowNbr[k], j + colNbr[k], visited)){
+        		dfs(a, i + rowNbr[k], j + colNbr[k], visited);
+        	}
+        }
+		
+	}
+	
+	 static boolean isSafe(int M[][], int row, int col,boolean visited[][]){
+  
+		 return (row >= 0) && (row < M.length) &&
+				 (col >= 0) && (col < M[0].length) &&
+				 (M[row][col]==1 && !visited[row][col]);
+	 }
+
+}

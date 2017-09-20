@@ -1,0 +1,42 @@
+package Minimum_characters_to_be_added_at_front_to_make_string_palindrome;
+
+public class Main {
+
+	public static void main(String argv[]){
+		String s = "abc";
+		find(s);
+	}
+	
+	static void find(String s){
+		StringBuilder sb = new StringBuilder(s);
+		StringBuilder str = new StringBuilder(sb.append("$"));
+		str.append(sb.reverse());
+				
+		int[] arr = new int[str.length()];
+		
+		int i=1;
+		int len = 0;
+		int n = sb.length();
+		arr[0] = 0;
+		while(i<str.length()){
+			//System.out.println("rff"+" "+i);
+			if(str.charAt(i)==str.charAt(len)){
+				len++;
+				arr[i] = len;
+				i++;
+			}
+			else{
+				if(len==0){
+					arr[len] = 0;
+					i++;
+				}
+				else{
+					len = arr[len-1];
+				}
+					
+			}
+		}
+		
+		System.out.println(sb.length()-1-arr[arr.length-1]);
+	}
+}

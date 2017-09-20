@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Binary tree/src/Remove_all_node_which_dont_lie_in_any_path_with_sum_k/Main.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Remove_all_node_which_dont_lie_in_any_path_with_sum_k.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Binary tree"/>
+</launchConfiguration>

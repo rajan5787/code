@@ -1,0 +1,66 @@
+package Check_if_each_internal_node_of_a_BST_has_exactly_one_child;
+
+class Node{
+	int d;
+	Node left,right;
+	Node(int d){
+		this.d = d;
+		this.left=null;
+		this.right = null;
+	}
+}
+class BinaryTree{
+	Node root;
+	BinaryTree(){
+		root = null;
+	}
+	
+	void push(int d){
+		root = insert(root,d);
+	}
+	Node insert(Node root,int d){
+		
+		if(root==null)
+			return new Node(d);
+		if(root.d>=d)
+			root.left = insert(root.left,d);
+		else
+			root.right = insert(root.right,d);
+		
+		return root;
+	}
+	
+	boolean find(int[] arr){
+		int min = 0,max = 0;
+		if(arr[arr.length-1]>arr[arr.length-2]){
+			max = arr[arr.length-1];
+			min = arr[arr.length-2];
+		}
+		else{
+			min = arr[arr.length-1];
+			max = arr[arr.length-2];
+		}
+		
+		for(int i = 0;i<arr.length-3;i++){
+			
+			if(arr[i]<min){
+				min = arr[i];
+				return true;
+			}
+			else if(arr[i]>max){
+				max = arr[i];
+				return true;
+			}
+			else
+				return false;
+		}
+		return true;
+	}
+}
+
+public class Main {
+	public static void main(String argv[]){
+		
+		 BinaryTree tree = new BinaryTree();
+	}
+}
